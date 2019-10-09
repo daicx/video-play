@@ -1,0 +1,230 @@
+<!--pages/introduce/introduce.wxml-->
+<view class='bottom'><textarea placeholder='请输入评论' cursor-spacing='20' class='comment'></textarea>
+<view class='bottom-submit'><button class='bottom-submit-button'>确定</button></view>
+</view>
+<video class='player' src='/video/山鹰之歌.mp4' autoplay='true'></video>
+<view class='player-button'>
+  <view class='player-button-left'>
+    <text class='player-title'>山鹰之歌</text>
+    <text class='player-count' decode='true'>&ensp;播放次数:3.3万</text>
+  </view>
+  <view class='player-button-right'>
+    <image class='zan' src='/images/1.png'></image>
+    <image class='haoyou' src='/images/1.png'></image>
+    <image class='pyquan' src='/images/1.png'></image>
+  </view>
+</view>
+<view class='line'></view>
+<scroll-view class='scroll' scroll-y='true'>
+  <view class='player-introduce'>
+    <view class='player-introduce-jianjie'>
+      简介:
+    </view>
+    <view class='player-introduce-detail'>
+      山鹰之歌
+    </view>
+  </view>
+  <view class='line'></view>
+  <view class='pinglun'>
+    <text>热门评论:</text>
+    <view class='pinglun-detail'>
+      <image src='/images/1.png' class='pinglun-img'></image>
+      <view class='pinglun-content'>
+        <view class='pinglun-content-left'>
+          <view class='pinglun-content-left-title'>
+            @Alex
+          </view>
+          <view class='pinglun-content-left-title'>
+            Alex,daddb不错
+          </view>
+          <view class='pinglun-content-left-time'>
+            <text class='pinglun-content-left-time-text'>2个小时前</text>
+          </view>
+        </view>
+        <view class='pinglun-content-right'>
+          <image src='/images/1.png' class='pinglun-content-right-zan'></image>
+          <text class='pinglun-content-right-count'>
+              21.3w
+            </text>
+        </view>
+      </view>
+    </view>
+    <view class='pinglun-detail'>
+      <image src='/images/1.png' class='pinglun-img'></image>
+      <view class='pinglun-content'>
+        <view class='pinglun-content-left'>
+          <view class='pinglun-content-left-title'>
+            @Alex
+          </view>
+          <view class='pinglun-content-left-title'>
+            Alex,daddb不错
+          </view>
+          <view class='pinglun-content-left-time'>
+            <text class='pinglun-content-left-time-text'>2个小时前</text>
+          </view>
+        </view>
+        <view class='pinglun-content-right'>
+          <image src='/images/1.png' class='pinglun-content-right-zan'></image>
+          <text class='pinglun-content-right-count'>
+              21.3w
+            </text>
+        </view>
+      </view>
+    </view>
+    <view class='pinglun-detail'>
+      <image src='/images/1.png' class='pinglun-img'></image>
+      <view class='pinglun-content'>
+        <view class='pinglun-content-left'>
+          <view class='pinglun-content-left-title'>
+            @Alex
+          </view>
+          <view class='pinglun-content-left-title'>
+            Alex,daddb不错
+          </view>
+          <view class='pinglun-content-left-time'>
+            <text class='pinglun-content-left-time-text'>2个小时前</text>
+          </view>
+        </view>
+        <view class='pinglun-content-right'>
+          <image src='/images/1.png' class='pinglun-content-right-zan'></image>
+          <text class='pinglun-content-right-count'>
+              21.3w
+            </text>
+        </view>
+      </view>
+    </view>
+    <view class='pinglun-detail'>
+      <image src='/images/1.png' class='pinglun-img'></image>
+      <view class='pinglun-content'>
+        <view class='pinglun-content-left'>
+          <view class='pinglun-content-left-title'>
+            @Alex
+          </view>
+          <view class='pinglun-content-left-title'>
+            Alex,daddb不错
+          </view>
+          <view class='pinglun-content-left-time'>
+            <text class='pinglun-content-left-time-text'>2个小时前</text>
+          </view>
+        </view>
+        <view class='pinglun-content-right'>
+          <image src='/images/1.png' class='pinglun-content-right-zan'></image>
+          <text class='pinglun-content-right-count'>
+              21.3w
+            </text>
+        </view>
+      </view>
+    </view>
+    <view class='pinglun-detail'>
+      <image src='/images/1.png' class='pinglun-img'></image>
+      <view class='pinglun-content'>
+        <view class='pinglun-content-left'>
+          <view class='pinglun-content-left-title'>
+            @Alex
+          </view>
+          <view class='pinglun-content-left-title'>
+            Alex,daddb不错
+          </view>
+          <view class='pinglun-content-left-time'>
+            <text class='pinglun-content-left-time-text'>2个小时前</text>
+          </view>
+        </view>
+        <view class='pinglun-content-right'>
+          <image src='/images/1.png' class='pinglun-content-right-zan'></image>
+          <text class='pinglun-content-right-count'>
+              21.3w
+            </text>
+        </view>
+      </view>
+    </view>
+    <view class='pinglun-detail'>
+      <image src='/images/1.png' class='pinglun-img'></image>
+      <view class='pinglun-content'>
+        <view class='pinglun-content-left'>
+          <view class='pinglun-content-left-title'>
+            @Alex
+          </view>
+          <view class='pinglun-content-left-title'>
+            Alex,daddb不错
+          </view>
+          <view class='pinglun-content-left-time'>
+            <text class='pinglun-content-left-time-text'>2个小时前</text>
+          </view>
+        </view>
+        <view class='pinglun-content-right'>
+          <image src='/images/1.png' class='pinglun-content-right-zan'></image>
+          <text class='pinglun-content-right-count'>
+              21.3w
+            </text>
+        </view>
+      </view>
+    </view>
+    <view class='pinglun-detail'>
+      <image src='/images/1.png' class='pinglun-img'></image>
+      <view class='pinglun-content'>
+        <view class='pinglun-content-left'>
+          <view class='pinglun-content-left-title'>
+            @Alex
+          </view>
+          <view class='pinglun-content-left-title'>
+            Alex,daddb不错
+          </view>
+          <view class='pinglun-content-left-time'>
+            <text class='pinglun-content-left-time-text'>2个小时前</text>
+          </view>
+        </view>
+        <view class='pinglun-content-right'>
+          <image src='/images/1.png' class='pinglun-content-right-zan'></image>
+          <text class='pinglun-content-right-count'>
+              21.3w
+            </text>
+        </view>
+      </view>
+    </view>
+    <view class='pinglun-detail'>
+      <image src='/images/1.png' class='pinglun-img'></image>
+      <view class='pinglun-content'>
+        <view class='pinglun-content-left'>
+          <view class='pinglun-content-left-title'>
+            @Alex
+          </view>
+          <view class='pinglun-content-left-title'>
+            Alex,daddb不错
+          </view>
+          <view class='pinglun-content-left-time'>
+            <text class='pinglun-content-left-time-text'>2个小时前</text>
+          </view>
+        </view>
+        <view class='pinglun-content-right'>
+          <image src='/images/1.png' class='pinglun-content-right-zan'></image>
+          <text class='pinglun-content-right-count'>
+              21.3w
+            </text>
+        </view>
+      </view>
+    </view>
+    <view class='pinglun-detail'>
+      <image src='/images/1.png' class='pinglun-img'></image>
+      <view class='pinglun-content'>
+        <view class='pinglun-content-left'>
+          <view class='pinglun-content-left-title'>
+            @Alex
+          </view>
+          <view class='pinglun-content-left-title'>
+            Alex,daddb不错
+          </view>
+          <view class='pinglun-content-left-time'>
+            <text class='pinglun-content-left-time-text'>2个小时前</text>
+          </view>
+        </view>
+        <view class='pinglun-content-right'>
+          <image src='/images/1.png' class='pinglun-content-right-zan'></image>
+          <text class='pinglun-content-right-count'>
+              21.3w
+            </text>
+        </view>
+      </view>
+    </view>
+    
+  </view>
+</scroll-view>

@@ -1,0 +1,65 @@
+/* pages/wode/wode.wxss */
+.wode {
+  width: 100vw;
+  height: 100vh;
+  background-color: gainsboro;
+}
+.blank {
+  background-color: gray;
+  width: 100vw;
+  height: 50rpx;
+}
+.user-name-image {
+  width: 96vw;
+  margin: 2vw;
+  height: 20vh;
+  background-color: white;
+  display: flex;
+}
+.user-name {
+  padding-left: 7vw;
+  vertical-align: middle;
+  width: 70vw;
+  height: 20vh;
+}
+.name-nick{
+  padding-top: 4vw;
+}
+.name {
+  margin-top: 6vw;
+}
+.user-image {
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.yuding {
+  display: flex;
+  float: left;
+  width: 96vw;
+  height: 10vh;
+  margin: 2vw;
+  background-color: white;
+}
+.shoucang {
+  display: flex;
+  float: left;
+  width: 96vw;
+  height: 10vh;
+  margin: 2vw;
+  background-color: white;
+}
+.ours {
+  display: flex;
+  float: left;
+  width: 96vw;
+  height: 10vh;
+  margin: 2vw;
+  background-color: white;
+}

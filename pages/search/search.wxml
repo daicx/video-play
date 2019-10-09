@@ -1,0 +1,71 @@
+<!--pages/search/search.wxml-->
+<view class="search page_row">
+  <input class="df_1" placeholder="请输入你有搜索的内容" value="{{searchValue}}" bindinput="searchValueInput" />
+</view>
+<view class='search-history'>
+  <text class='search-history-title'>搜索历史</text>
+  <view class='search-history-content'>
+    <button class='search-history-button'>变成金城</button>
+    <button class='search-history-button'>变成金城</button>
+    <button class='search-history-button'>变成金城</button>
+    <button class='search-history-button'>变成</button>
+    <button class='search-history-button'>变成</button>
+  </view>
+</view>
+<view class='line'></view>
+<view class='space'></view>
+<text class='hot-search-title'>热门搜索</text>
+<view class='hot-search'>
+  <view class='hot-search-left'>
+    <text class='hot-search-left-id'>①</text>
+    <text class='hot-search-left-title' decode='{{true}}'> &ensp;德玛西亚</text>
+  </view>
+  <view class='hot-search-right'>
+    <text class='hot-search-right-status'>↑</text>
+  </view>
+</view>
+<view class='hot-search'>
+  <view class='hot-search-left'>
+    <text class='hot-search-left-id'>②</text>
+    <text class='hot-search-left-title' decode='{{true}}'> &ensp;德玛西亚</text>
+  </view>
+  <view class='hot-search-right'>
+    <text class='hot-search-right-status'>↑</text>
+  </view>
+</view>
+<view class='hot-search'>
+  <view class='hot-search-left'>
+    <text class='hot-search-left-id'>③</text>
+    <text class='hot-search-left-title' decode='{{true}}'> &ensp;德玛西亚</text>
+  </view>
+  <view class='hot-search-right'>
+    <text class='hot-search-right-status'>↑</text>
+  </view>
+</view>
+<view class='hot-search'>
+  <view class='hot-search-left'>
+    <text class='hot-search-left-id'>④</text>
+    <text class='hot-search-left-title' decode='{{true}}'> &ensp;德玛西亚</text>
+  </view>
+  <view class='hot-search-right'>
+    <text class='hot-search-right-status'>↑</text>
+  </view>
+</view>
+<view class='hot-search'>
+  <view class='hot-search-left'>
+    <text class='hot-search-left-id'>⑤</text>
+    <text class='hot-search-left-title' decode='{{true}}'> &ensp;德玛西亚</text>
+  </view>
+  <view class='hot-search-right'>
+    <text class='hot-search-right-status'>↑</text>
+  </view>
+</view>
+<view class='hot-search'>
+  <view class='hot-search-left'>
+    <text class='hot-search-left-id'>⑥</text>
+    <text class='hot-search-left-title' decode='{{true}}'> &ensp;德玛西亚</text>
+  </view>
+  <view class='hot-search-right'>
+    <text class='hot-search-right-status'>↑</text>
+  </view>
+</view>

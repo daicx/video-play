@@ -1,0 +1,123 @@
+/* pages/introduce/introduce.wxss */
+.player{
+  width: 100vw;
+  height: 40vh;
+}
+.scroll{
+  height: 49vh;
+}
+.player-introduce{
+  width: 96vw;
+  margin: 2vw;
+}
+.bottom{
+  width: 100vw;
+  position:fixed;
+  bottom: 0;
+  background-color: greenyellow;
+  display: flex;
+  height: 5vh;
+}
+.bottom-submit{
+  margin-right: 3vw;
+  width: 25vw;
+}
+.bottom-submit-button{
+  font-size: small;
+}
+
+.line {
+  margin: 0, auto;
+  height: 1px;
+  background-color:gainsboro;
+}
+.player-introduce-jianjie{
+  margin-top: 2vw;
+  font-size: small;
+}
+.player-introduce-detail{
+  margin-top: 2vw;
+  font-size: smaller;
+  margin-left: 5vw;
+}
+.player-button{
+  width: 96vw;
+  margin: 1vw 2vw;
+  height: 4vh;
+  display: flex;
+  flex-direction: row;
+}
+.player-count{
+  font-size: 60%;
+}
+.player-button-left{
+  width: 66vw;
+  height: 7vw;
+}
+.player-button-right{
+  width: 30vw;
+  height: 7vw;
+}
+.zan{
+  width: 7vw;
+  height: 7vw;
+  margin-left: 2vw;
+}
+.haoyou{
+  width: 7vw;
+  height: 7vw;
+  margin-left: 2vw;
+}
+.pyquan{
+  width: 7vw;
+  height: 7vw;
+  margin-left: 2vw;
+}
+.pinglun-detail{
+  margin: 2vw;
+  height: 20vw;
+  display: flex;
+  flex-direction: row;
+}
+.pinglun-img{
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+}
+.pinglun-content{
+  width: 86vw;
+  height: 20vw;
+  display: flex;
+  flex-direction: row;
+}
+.pinglun-content-left-time{
+  margin-left: 2vw;
+  margin-bottom: 0vw;
+}
+.pinglun-content-left{
+  width: 70vw;
+  height: 20vw;
+}
+.pinglun-content-left-title{
+  margin-left: 2vw;
+}
+.pinglun-content-left-time-text{
+  font-size: smaller;
+  color: gray;
+}
+.pinglun-content-right{
+  height: 20vw;
+  width: 16vw;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+}
+.pinglun-content-right-zan{
+  margin-top: 2vw;
+  width: 5vw;
+  height: 5vw;
+}
+.pinglun-content-right-count{
+  font-size: smaller;
+  color: gray;
+}

@@ -1,0 +1,60 @@
+/* pages/smallvideo/smallvideo.wxss */
+.scroll{
+  width: 100vw;
+  min-height: 50vw;
+}
+.line{
+  margin: 0,auto;
+  height: 1px;
+  background-color: gainsboro;
+}
+.img{
+  margin-top: 3vw;
+  width: 100vw;
+  height: 50vw;
+  padding-top: 2vw;
+}
+.smallvideo-title{
+  color: white;
+  margin: 2vw;
+  height: 6vw;
+  font-size: medium;
+  width: 96vw;
+}
+.smallvideo-detail{
+  color: white;
+  font-size: small;
+  margin: 2vw;  
+  width: 96vw;
+}
+.biaoqian{
+  width: 100vw;
+  height: 10vw;
+  display: flex;
+  flex-direction: row;
+}
+.biaoqian-left-view{
+  width: 70vw;
+  height: 10vw;
+  align-items: center;
+  display: flex;
+  
+}
+.biaoqian-left-button{
+  margin-left: 2vw;
+  font-size: 60%;
+  background-color: gainsboro;
+ 
+}
+.biaoqian-right-view{
+  width: 30vw;
+  height: 10vw;
+  display: flex;
+  align-items: center;
+}
+.biaoqian-right-button{
+  height: 7.5vw;
+}
+.biaoqian-right-button::after{
+  border: none;
+}

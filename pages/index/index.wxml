@@ -1,0 +1,227 @@
+<!--index.wxml-->
+<view class='page_row' bindtap="suo">
+  <view class="search">
+    <view class="df search_arr">
+      <icon class="searchcion" size='20' type='search'></icon>
+      <input class="" disabled placeholder="请输入关键字" value="{{searchValue}}"/> </view>
+  </view>
+  <view class='sousuo'>搜索</view>
+</view>
+
+<scroll-view scroll-y="true" class="scroll">
+  <!--顶部轮播图  -->
+  <swiper indicator-dots="true" autoplay="true" interval='5000' indicator-active-color="white" circular="true" class='swiper'>
+    <swiper-item wx:for='{{auto}}' wx:key='{{item}}' class='swiper-item'  style='background-image: url(/images/1.png);background-repeat:no-repeat; background-size:100% 100%;-moz-background-size:100% 100%;' bindtap='playClick'
+    data-id='{{item.videoId}}'>
+      <text class='swiper-text'>{{item.title}}</text>
+    </swiper-item>
+  </swiper>
+  <!-- 导航分类 -->
+  <view class='introduce' >
+    <view class='listIntro' hover-class='light-view' hover-stay-time='1' bindtap='video_list'>
+      <image class='listImg' src='/images/节日.png'></image>
+      <view class='listTitle'>
+        <text class='listTitleFont'>节日</text>
+      </view>
+    </view>
+    <view class='listIntro' hover-class='light-view' hover-stay-time='1' bindtap='video_list'>
+      <image class='listImg' src='/images/婚礼.png'></image>
+      <view class='listTitle'>
+        <text class='listTitleFont'>婚礼</text>
+      </view>
+    </view>
+    <view class='listIntro' hover-class='light-view' hover-stay-time='1' bindtap='video_list'>
+      <image class='listImg' src='/images/商务.png'></image>
+      <view class='listTitle'>
+        <text class='listTitleFont'>商务</text>
+      </view>
+    </view>
+    <view class='listIntro' hover-class='light-view' hover-stay-time='1' bindtap='video_list'>
+      <image class='listImg' src='/images/搞笑.png'></image>
+      <view class='listTitle'>
+        <text class='listTitleFont'>搞笑</text>
+      </view>
+    </view>
+  </view>
+  <!-- 横线 -->
+  <view class='line'></view>
+  <!-- 正在热播 -->
+  <view class='hotVideo'>
+    <view class='hotVideo-title'>
+      <image class='hotVideo-title-img' src='/images/hot.png'></image>
+      <text class='hotVideo-title-font'>正在热播</text>
+    </view>
+    <view class='hotVideo-detail'>
+      <view data-id='{{item.videoId}}' wx:for='{{hot}}' wx:key='{{item}}' class='hotVideo-detail-out' bindtap='playClick'>
+        <view  class='hotVideo-detail-img' style='background-image: url(/images/3.png);background-repeat:no-repeat; background-size:100% 100%;-moz-background-size:100% 100%;'>
+
+          <text class='hotVideo-detail-img-title'> {{item.descs}}</text>
+
+        </view>
+        <view class='hotVideo-detail-text'>
+          <text class='hotVideo-detail-text-detail'>{{item.title}}</text>
+        </view>
+      </view>
+      <!-- <view class='hotVideo-detail-out'>
+        <view class='hotVideo-detail-img' style='background-image: url(/images/3.png);background-repeat:no-repeat; background-size:100% 100%;-moz-background-size:100% 100%;'>
+
+          <text class='hotVideo-detail-img-title'> 今日已经更新到10集</text>
+
+        </view>
+        <view class='hotVideo-detail-text'>
+          <text class='hotVideo-detail-text-detail'>小宝玛丽</text>
+        </view>
+      </view>
+      <view class='hotVideo-detail-out'>
+        <view class='hotVideo-detail-img' style='background-image: url(/images/3.png);background-repeat:no-repeat; background-size:100% 100%;-moz-background-size:100% 100%;'>
+
+          <text class='hotVideo-detail-img-title'> 今日已经更新到10集</text>
+
+        </view>
+        <view class='hotVideo-detail-text'>
+          <text class='hotVideo-detail-text-detail'>小宝玛丽</text>
+        </view>
+      </view>
+      <view class='hotVideo-detail-out'>
+        <view class='hotVideo-detail-img' style='background-image: url(/images/3.png);background-repeat:no-repeat; background-size:100% 100%;-moz-background-size:100% 100%;'>
+
+          <text class='hotVideo-detail-img-title'> 今日已经更新到10集</text>
+
+        </view>
+        <view class='hotVideo-detail-text'>
+          <text class='hotVideo-detail-text-detail'>小宝玛丽</text>
+        </view>
+      </view> -->
+    </view>
+    <button class='hot-button'>
+      <text>换一批</text>  
+      <image class='hotvideo-button-img' src='/images/我的.png'></image>
+    </button>
+  </view>
+
+  <!-- 横线 -->
+  <view class='line'></view>
+  <!-- 正在热播 -->
+  <view class='hotVideo'>
+    <view class='hotVideo-title'>
+      <image class='hotVideo-title-img' src='/images/我的.png'></image>
+      <text class='hotVideo-title-font'>辉煌大气</text>
+    </view>
+    <view class='hotVideo-detail'>
+      <view class='hotVideo-detail-out'>
+        <view class='hotVideo-detail-img' style='background-image: url(/images/3.png);background-repeat:no-repeat; background-size:100% 100%;-moz-background-size:100% 100%;'>
+
+          <text class='hotVideo-detail-img-title'> 今日已经更新到10集</text>
+
+        </view>
+        <view class='hotVideo-detail-text'>
+          <text class='hotVideo-detail-text-detail'>小宝玛丽</text>
+        </view>
+      </view>
+      <view class='hotVideo-detail-out'>
+        <view class='hotVideo-detail-img' style='background-image: url(/images/3.png);background-repeat:no-repeat; background-size:100% 100%;-moz-background-size:100% 100%;'>
+
+          <text class='hotVideo-detail-img-title'> 今日已经更新到10集</text>
+
+        </view>
+        <view class='hotVideo-detail-text'>
+          <text class='hotVideo-detail-text-detail'>小宝玛丽</text>
+        </view>
+      </view>
+      <view class='hotVideo-detail-out'>
+        <view class='hotVideo-detail-img' style='background-image: url(/images/3.png);background-repeat:no-repeat; background-size:100% 100%;-moz-background-size:100% 100%;'>
+
+          <text class='hotVideo-detail-img-title'> 今日已经更新到10集</text>
+
+        </view>
+        <view class='hotVideo-detail-text'>
+          <text class='hotVideo-detail-text-detail'>小宝玛丽</text>
+        </view>
+      </view>
+      <view class='hotVideo-detail-out'>
+        <view class='hotVideo-detail-img' style='background-image: url(/images/3.png);background-repeat:no-repeat; background-size:100% 100%;-moz-background-size:100% 100%;'>
+
+          <text class='hotVideo-detail-img-title'> 今日已经更新到10集</text>
+
+        </view>
+        <view class='hotVideo-detail-text'>
+          <text class='hotVideo-detail-text-detail'>小宝玛丽</text>
+        </view>
+      </view>
+    </view>
+    <button class='hot-button'>
+      <text>换一批</text>  
+      <image class='hotvideo-button-img' src='/images/我的.png'></image>
+    </button>
+  </view>
+  <view class='line'></view>
+  <view class='two-type'>
+    <view class='hotVideo-title'>
+      <image class='hotVideo-title-img' src='/images/我的.png'></image>
+      <text class='hotVideo-title-font'>德玛西亚</text>
+    </view>
+    <view class='two-type-first-out'>
+      <view class='two-type-first' style='background-image: url(/images/3.png);background-repeat:no-repeat; background-size:100% 100%;-moz-background-size:100% 100%;'>
+      </view>
+      <view class='two-type-first-text'>
+        <text class='two-type-first-text-detail'>小宝玛丽</text>
+      </view>
+    </view>
+    <view class='two-type-two'>
+      <view class='two-type-out'>
+        <view class='two-type-out-img' style='background-image: url(/images/3.png);background-repeat:no-repeat; background-size:100% 100%;-moz-background-size:100% 100%;'>
+
+          <text class='two-type-out-img-scort'>9.0</text>
+
+        </view>
+        <view class='two-type-out-text'>
+          <text class='two-type-out-text-detail'>奥特曼大全</text>
+        </view>
+      </view>
+      <view class='two-type-out'>
+        <view class='two-type-out-img' style='background-image: url(/images/3.png);background-repeat:no-repeat; background-size:100% 100%;-moz-background-size:100% 100%;'>
+
+          <text class='two-type-out-img-scort'>9.0</text>
+
+        </view>
+        <view class='two-type-out-text'>
+          <text class='two-type-out-text-detail'>奥特曼大全</text>
+        </view>
+      </view>
+      <view class='two-type-out'>
+        <view class='two-type-out-img' style='background-image: url(/images/3.png);background-repeat:no-repeat; background-size:100% 100%;-moz-background-size:100% 100%;'>
+
+          <text class='two-type-out-img-scort'>9.0</text>
+
+        </view>
+        <view class='two-type-out-text'>
+          <text class='two-type-out-text-detail'>奥特曼大全</text>
+        </view>
+      </view>
+      <view class='two-type-out'>
+        <view class='two-type-out-img' style='background-image: url(/images/3.png);background-repeat:no-repeat; background-size:100% 100%;-moz-background-size:100% 100%;'>
+
+          <text class='two-type-out-img-scort'>9.0</text>
+
+        </view>
+        <view class='two-type-out-text'>
+          <text class='two-type-out-text-detail'>奥特曼大全</text>
+        </view>
+      </view>
+      <view class='two-type-out'>
+        <view class='two-type-out-img' style='background-image: url(/images/3.png);background-repeat:no-repeat; background-size:100% 100%;-moz-background-size:100% 100%;'>
+
+          <text class='two-type-out-img-scort'>9.0</text>
+
+        </view>
+        <view class='two-type-out-text'>
+          <text class='two-type-out-text-detail'>奥特曼大全</text>
+        </view>
+      </view>
+    </view>
+    <button class='hot-button'>
+      <text>换一批</text>  
+      <image class='hotvideo-button-img' src='/images/我的.png'></image>
+    </button>
+  </view>
+</scroll-view>

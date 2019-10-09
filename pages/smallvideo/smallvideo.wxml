@@ -1,0 +1,24 @@
+<scroll-view scroll-y="true" class='scroll'>
+  <view wx:for='{{smallvideo}}' wx:key='{{item}}' id="1" class='smallvideo' data-index='2'>
+  <view class='line'></view>
+    <view class='img' style='background-image: url(/images/3.png);background-repeat:no-repeat; background-size:100% 100%;-moz-background-size:100% 100%;'>
+      <view class='smallvideo-title'>
+        {{item.title}}
+      </view>
+      <view class='smallvideo-detail'>
+        {{item.desc}}|{{item.time}}
+      </view>
+    </view>
+    <view class='biaoqian'>
+      <view class='biaoqian-left-view'>
+        <button wx:for='{{item.label}}' wx:key='{{index}}' wx:for-item='litem' class='biaoqian-left-button'>
+          {{litem}}
+        </button>
+      </view>
+      <view class='biaoqian-right-view'>
+        <button data-index='{{index}}' style='background-image: url(/images/{{item.iflike}}.png);background-repeat:no-repeat; background-size:100% 100%;-moz-background-size:100% 100%;' class='biaoqian-right-button' bindtap='zanImg'></button>
+        <button data-index='{{index}}' open-type="share" style='background-image: url(/images/分享.png);background-repeat:no-repeat; background-size:100% 100%;-moz-background-size:100% 100%;' class='biaoqian-right-button'></button>
+      </view>
+    </view>
+  </view>
+</scroll-view>

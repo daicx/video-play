@@ -1,0 +1,20 @@
+<!--pages/wode/wode.wxml-->
+<view class="wode">
+<view class="blank"></view>
+  <view class="user-name-image">
+    <view class="user-name">
+      <view class='name-nick'>您好</view>
+      <view class='name'>代长侠</view>
+    </view>
+   <view  class='user-image'>
+      <image class='image' src='../../images/1.png'>
+      
+      </image>
+    </view>
+  </view>
+  <button class='yuding'><text>观看历史</text></button>
+  <button class='shoucang'><text>我喜欢的</text></button>
+  <button class='ours'>
+  <text>关于我们</text></button>
+</view>
+
